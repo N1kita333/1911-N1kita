@@ -9,6 +9,7 @@ d = int(input('Введіть діаметр диску в мм, '))
 rez = func(d)
 print('Сторона коробки =', round(rez, 2), 'MM')
 
+
 ###
 def func(c, m, t1, t2):
     return c * m * (t2 - t1)
@@ -21,6 +22,7 @@ t2 = int(input('Введіть кінцеву температуру тіла, '
 rez = func(c, m, t1, t2)
 print('Необхідна кількість теплоти =', round(rez, 2))
 
+
 ###
 def func(s, h, a, b):
     return s / ((a + b) / 2 * h)
@@ -32,6 +34,7 @@ b = int(input('Введіть довжину сторони плитки b= '))
 h = int(input('Введіть вистоу плитки h= '))
 rez = func(s, h, a, b)
 print('Kiлькiсть плиток =', round(rez, 2), 'шt.')
+
 
 ###
 def func(x1, y1, x2, y2):
