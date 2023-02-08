@@ -60,7 +60,7 @@ class Human:
         print(f"{house_str:=^50}", "\n")
         print(f"Їжа         - {self.house.food}")
         print(f"Порядок     - {self.house.mess}")
-        car_str = "Iнooрмачiя про автiвкуy {self.car.brand}"
+        car_str = "Інформація про авиівку {self.car.brand}"
         print(f"{car_str:=^50}", "\n")
         print(f"Пальне        {self.car.fuel}")
         print(f"CTаH          {self.car.strength}")
