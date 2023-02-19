@@ -3,9 +3,9 @@ class House:
         self.kitchen = kitchen
         self.located = []
 
-    def add_located(self, *animal):
+    '''def add_located(self, *animal):
         for located in animal:
-            self.located.append(located)
+            self.located.append(located)'''
 
     def print_located(self):
         if self.located == []:
@@ -19,34 +19,34 @@ class House:
 class Animal:
     count_of_animal = 0
 
-    def __init__(self, name=None, years=None, description=None):
+    def __init__(self, name=None):
         self.name = name
-        self.years = years
-        self.description = description
+        self.years = 1
         Animal.count_of_animal += 1
         print(f"Привіт, я з'явився, я {self.name}")
 
-    #def grow(self, years=0.1):
-    #    self.years += 0.1
+    '''def grow(self, years=0.1):
+        self.years += 0.1
 
-    #def __str__(self):
-    #    return f'я {self.name}, мій зріст {self.years} '
+    def __str__(self):
+        return f'я {self.name}, мій зріст {self.years} '
 
-    #def __del__(self):
-    #    print(f'Привіт, я {self.name}, {self.description}, мені {self.years} і я пішов гуляти')
-
-
-#Tom = Animal(name='Tom', years=2, description='я кот')
+    def __del__(self):
+        print(f'Привіт, я {self.name}, {self.description}, мені {self.years} і я пішов гуляти')'''
 
 
+class Cat(Animal):
+    years = 0.5
+    description = "я кіт"
+    Fluffiness = "Пухнаста шірсть"
 
-#Ashley = Animal(name='Ashley', years=1, description='я кіт')
 
-# Ashley.grow()
-print(Animal.count_of_animal, "шт.")
-Ashley = Animal("Ashley",  years=2, description='я кот')
-Tom = Animal("Tom", years=1, description='я кіт')
-house = House("кухні")
-house.print_located()
-house.add_located(Ashley, Tom)
-house.print_located()
+Tom = Cat(name='Tom')
+print("Мені", Tom.years, "рок-ів")
+print(Tom.description)
+print(Tom.Fluffiness)
+print("Мене звати", Tom.name)
+
+# Tom = Cat(name='Tom', years=2, description='я кот')
+
+# Ashley = Cat(name='Ashley', years=1, description='я кіт')

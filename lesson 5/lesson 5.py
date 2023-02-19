@@ -23,7 +23,6 @@ class Aspirant(Student):
         print("__Hello")
 
 
-
 class Worker(Human):
     age = 50
 
@@ -47,8 +46,6 @@ class Hello_Kity:
         print(self.__kity)
 
 
-
-
 class Hi(Hello_Kity):
     def hi_print(self):
         super().__method()
@@ -63,11 +60,10 @@ class Hi(Hello_Kity):
         print("Method")
 
 
-
-
 class Computer:
-    def __init__(self):
+    def __init__(self, model, *args, **kwargs):
         self.RAM = "16 Gb"
+        self.model = model
 
     def calc(self):
         print("Calculate.....")
@@ -86,27 +82,22 @@ class SmartPhone(Monitor, Computer):
     def info(self):
         print(self.resolution)
         print(self.RAM)
+        print(self.model)
 
 
+#phone = SmartPhone(model =  "Apple 15")
+#phone.info()
+
+# hello = Hello_Kity()
+# ello.print()
 
 
-
-phone = SmartPhone()
-phone.info()
-
+# hi = Hi()
+# hi.hi_print()
 
 
-#hello = Hello_Kity()
-#ello.print()
-
-
-#hi = Hi()
-#hi.hi_print()
-
-
-
-#asp = Aspirant()
-#asp._hello()
+# asp = Aspirant()
+# asp._hello()
 
 
 # st = Student()
