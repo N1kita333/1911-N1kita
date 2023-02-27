@@ -26,7 +26,7 @@ response_parse = response_text.split("<span>")
 for elem in response_parse:
     if elem.startswith("$"):
         from elem2 in elem.split("</span>"):
-            #if elem2.startswith("$") and elem2[1].isdigit()
+            if elem2.startswith("$") and elem2[1].isdigit()
                print(elem2)
 
 
